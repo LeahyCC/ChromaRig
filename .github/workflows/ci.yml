@@ -12,7 +12,7 @@ jobs:
         os: [windows-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: hidapi needs libudev on Linux
         if: runner.os == 'Linux'
         run: sudo apt-get update && sudo apt-get install -y libudev-dev
@@ -26,5 +26,5 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: npx --yes prettier@3 --check .
