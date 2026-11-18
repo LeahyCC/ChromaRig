@@ -1,0 +1,5 @@
+# Prettier formats the Markdown and YAML here. Rust is formatted by rustfmt.
+printWidth: 100
+tabWidth: 2
+endOfLine: "lf"
+proseWrap: "preserve"
